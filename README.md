@@ -26,7 +26,7 @@ Server Build      | Maven
 - Require java11 from OpenJDK when debugging or developing.
 
 #### Frontend
-- Go to your project folder from your terminal
+- For hot-load development
 - cd blog-frontend
 - Run: `npm install` or `yarn install`
 - After install, run: `npm run start` or `yarn start`
