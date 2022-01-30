@@ -18,17 +18,14 @@ Server Build      | Maven
 
 ## Getting Started
 
-### Prerequisites
--  Install Java 11 from the OpenJDK
--  Install Node.js from the Node.js website
--  Clone the repo `git clone https://github.com/keumtae-kim/spring-boot-react-blog.git`
+### Development mode
 
-### Backend
-- Go to your project folder from your terminal
-- cd blog-backend
-- Run: `mvnw spring-boot:run`
+#### Backend
+- Simply run: `docker-compose up -d` to start the application.
 
-### Frontend
+- Require java11 from OpenJDK when debugging or developing.
+
+#### Frontend
 - Go to your project folder from your terminal
 - cd blog-frontend
 - Run: `npm install` or `yarn install`

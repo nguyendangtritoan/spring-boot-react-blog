@@ -1,0 +1,23 @@
+version: "3.3"
+services:
+  server:
+    build:
+      context: ./blog-backend/
+    ports:
+      - "8080:8080"
+    networks:
+      - backend
+  frontend:
+    build:
+      context: ./blog-frontend
+      args:
+        REACT_APP_API_BASE_URL: http://127.0.0.1:8080
+    ports:
+      - "3000:3000"
+    depends_on:
+      - server
+    networks:
+      - frontend
+networks:
+  backend:
+  frontend:
