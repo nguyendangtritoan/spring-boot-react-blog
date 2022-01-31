@@ -1,12 +1,13 @@
 version: "3.3"
 services:
   server:
-    build:
-      context: ./blog-backend/
+    build: ./blog-backend
     ports:
       - "8080:8080"
-    networks:
-      - backend
+    volumes:
+      - .m2:/root/.m2
+    stdin_open: true
+    tty: true
   frontend:
     build:
       context: ./blog-frontend
